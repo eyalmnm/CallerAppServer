@@ -7,7 +7,6 @@ namespace CallerAppServer.Utils
 {
     public class DictionaryUtils
     {
-
         public static void ReadDictionaryData(Dictionary<String, String> data)
         {
             foreach (KeyValuePair<String, String> item in data)
