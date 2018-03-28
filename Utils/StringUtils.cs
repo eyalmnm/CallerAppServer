@@ -7,6 +7,9 @@ namespace CallerAppServer.Utils
 {
     public class StringUtils
     {
+        /*
+         * Check whether the given string is null or empty.
+         */ 
         public static bool IsNullOrEmpty(String str)
         {
             if (null == str) return true;
