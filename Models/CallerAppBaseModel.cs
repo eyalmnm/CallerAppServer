@@ -25,5 +25,35 @@ namespace CallerAppServer.Models
             this.Version = version;
         }
 
+
+        public String getTimeZone()
+        {
+            return this.TimeZone;
+        }
+
+        public String getTimeStamp()
+        {
+            return this.TimeStamp;
+        }
+
+        public String getPhoneModel()
+        {
+            return this.PhoneModel;
+        }
+
+        public String getPhoneManufacturer()
+        {
+            return this.PhoneManufacturer;
+        }
+
+        public String getPhoneType()
+        {
+            return this.PhoneType;
+        }
+
+        public String getVersion()
+        {
+            return this.Version;
+        }
     }
 }

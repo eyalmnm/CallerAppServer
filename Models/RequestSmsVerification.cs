@@ -5,6 +5,8 @@ using System.Web;
 
 namespace CallerAppServer.Models
 {
+    // Ref: https://stackoverflow.com/questions/22208413/generate-random-6-digit-number
+
     public class RequestSmsVerification : CallerAppBaseModel
     {
         private String DeviceId { get; set; }
@@ -19,6 +21,29 @@ namespace CallerAppServer.Models
             this.DeviceId = deviceId;
             this.PhoneNumber = phoneNumber;
             this.FullName = fullName;
+        }
+
+        public String getDeviceId()
+        {
+            return this.DeviceId;
+        }
+
+        public String getPhoneNumber()
+        {
+            return this.PhoneNumber;
+        }
+
+        public String getFullName()
+        {
+            return this.FullName;
+        }
+
+
+        private String GeneratedOtp()
+        {
+            Random generator = new Random();
+            String r = generator.Next(0, 999999).ToString("D6");
+            return r;
         }
     }
 }
